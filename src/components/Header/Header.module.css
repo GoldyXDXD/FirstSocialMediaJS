@@ -1,0 +1,11 @@
+.header {
+  width: 100%;
+  /* max-width: 7680px;
+    margin: 0 auto; */
+  grid-area: h;
+  background-color: green;
+}
+
+.header img {
+  width: 20px;
+}
