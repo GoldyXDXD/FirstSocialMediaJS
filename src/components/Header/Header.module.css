@@ -1,11 +1,32 @@
-.header {
+.siteHeader {
+  display: -ms-flexbox;
   width: 100%;
-  /* max-width: 7680px;
-    margin: 0 auto; */
+  justify-content: space-between;
   grid-area: h;
+  align-items: center;
   background-color: green;
 }
 
-.header img {
-  width: 20px;
+.brand img {
+  margin-top: 10px;
+  width: 40px;
+  margin-left: 20px;
+}
+
+.headerNavigation .item {
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 1.27em;
+  color: white;
+}
+
+.headerNavigation {
+  display: flex;
+  margin-right: 50px;
+}
+
+.siteHeader_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

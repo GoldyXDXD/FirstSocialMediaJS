@@ -4,7 +4,7 @@ const ProfileInfo = () => {
     return (
         <div className="avaCoverDescription">
             <div className={s.cover + " " + s.profileImage}>
-                <img src="https://img2.goodfon.ru/original/2896x1936/c/89/les-cvety-polyana-narcissy.jpg" />
+                <img src="http://pristor.ru/wp-content/uploads/2018/04/Красивые-картинки-для-обложки-в-ВК-1590х400-коллекция-картинок-15.jpg" />
                 {/*<img src='https://i.pinimg.com/originals/4f/d7/bf/4fd7bf44ab7d8857d0f68de504e6001e.jpg'/>*/}
             </div>
             <div className={s.avatarWrapper}>
