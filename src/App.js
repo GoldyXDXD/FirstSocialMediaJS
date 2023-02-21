@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import Dialogues from "./components/Dialogues/Dialogues";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Weather from "./components/Weather/Weather";
 
 const App = (props) => {
     return (
@@ -15,6 +16,7 @@ const App = (props) => {
                     <Routes>
                         <Route path='/profile' element={<Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />}/>
                         <Route path='/dialogues/*' element={<Dialogues state={props.state.dialoguePage} store={props.store}/>}/>
+                        <Route path="/weather" element={<Weather/>}/>
                     </Routes>
                 </div>
             </div>
