@@ -2,6 +2,7 @@ import s from './Weather.module.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faLocationDot, faMagnifyingGlass, faWater, faWind} from "@fortawesome/free-solid-svg-icons";
+import img404 from './images/not_found_404.png'
 
 library.add(
     faLocationDot,
@@ -23,7 +24,7 @@ const Weather = (props) => {
                 </button>
             </div>
             <div className={s.not_found}>
-                <img src="https://webmarketingschool.com/wp-content/uploads/2018/03/nojobsfound.png"></img>
+                <img src={img404}></img>
                 <p>Nah, invalid location</p>
             </div>
             <div className={s.weather_box}>
