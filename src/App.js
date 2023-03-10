@@ -5,6 +5,8 @@ import Profile from './components/Profile/Profile';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Weather from "./components/Weather/Weather";
 import DialoguesContainer from "./components/Dialogues/DialoguesContainer";
+import Users from "./components/Users/Users";
+import UsersContainer from "./components/Users/UsersContainer";
 
 const App = (props) => {
     return (
@@ -14,9 +16,10 @@ const App = (props) => {
                 <Navbar/>
                 <div className='app-wrapper-content'>
                     <Routes>
-                        <Route path='/profile' element={<Profile store={props.store} />}/>
-                        <Route path='/dialogues/*' element={<DialoguesContainer store={props.store}/>}/>
+                        <Route path='/profile' element={<Profile />}/>
+                        <Route path='/dialogues/*' element={<DialoguesContainer />}/>
                         <Route path="/weather" element={<Weather/>}/>
+                        <Route path='/users' element={<UsersContainer/>}/>
                     </Routes>
                 </div>
             </div>

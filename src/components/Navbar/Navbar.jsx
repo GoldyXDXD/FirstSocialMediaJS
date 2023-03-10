@@ -18,6 +18,9 @@ const Navbar = () => {
         <div className={s.item}>
             <NavLink to="/assignment" className={({isActive}) => isActive? s.active : s.item}>Semester assignment</NavLink>
         </div>
+        <div className={s.item}>
+            <NavLink to="/users" className={({isActive}) => isActive? s.active : s.item}>Users</NavLink>
+        </div>
     </nav>
 }
 

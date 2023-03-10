@@ -12,8 +12,8 @@ let initialState = {
         {id: 1, message: "HI"},
         {id: 2, message: "How are you"},
         {id: 3, message: "Fine"},
-        {id: 4, message: "Idi naxyu"},
-        {id: 5, message: "Sam idi"}
+        {id: 4, message: "Siiiuuuuuu"},
+        {id: 5, message: "Idu domoi"}
     ],
     newMessageBody: ''
 }
@@ -22,12 +22,16 @@ const dialoguesReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_MESSAGE:
             let body = state.newMessageBody;
-            state.newMessageBody = '';
-            state.messages.push({id: 6, message: body});
-            return state;
+            return {
+                ...state,
+                newMessageBody: '',
+                messages: [...state.messages, {id: 6, message: body}]
+            };
         case UPDATE_NEW_MESSAGE_BODY:
-            state.newMessageBody = action.newBody;
-            return state;
+            return {
+                ...state,
+                newMessageBody: action.newBody
+            };
         default:
             return state;
     }
